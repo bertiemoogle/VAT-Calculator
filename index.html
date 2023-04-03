@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VAT Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>VAT Calculator</h1>
+	</header>
+	<div class="vat-form">
+		<form>
+			<label for="gross">Gross:</label>
+			<input type="number" id="gross" step=".01" min="0" autocomplete="off">
+			<label for="vat">VAT:</label>
+			<p id="vat"></p>
+			<label for="net">Net:</label>
+			<p id="net"></p>
+			<button type="button" id="reset">Reset</button>
+            <div class="copy-icons">
+                <a href="#" class="copy-icon" data-target="gross"><i class="gross-icon far fa-copy"></i><p class="icon-text">Gross</p></a>
+                <a href="#" class="copy-icon" data-target="vat"><i class="vat-icon far fa-copy"></i><p class="icon-text">VAT</p></a>
+                <a href="#" class="copy-icon" data-target="net"><i class="net-icon far fa-copy"></i><p class="icon-text">Net</p></a>
+            </div>
+		</form>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/37f7338984.js" crossorigin="anonymous"></script>
+</body>
+</html>
