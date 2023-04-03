@@ -36,6 +36,5 @@ const gross = document.getElementById('gross');
 		    document.execCommand('copy');
 		    selection.removeAllRanges();
 		
-		    alert(`${targetElement.textContent} copied to clipboard`);
 		  });
 		});
